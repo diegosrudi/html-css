@@ -13,7 +13,7 @@
     padding: 0px;
 }
 
-body {
+html, body {
     min-height: 100vh;
     font-family: var(--fonte1);
     background-color: darkgray;
@@ -38,76 +38,56 @@ header h1 {
     background-color: black;
 
  }
- header a {
+ a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
  }
- header a:hover {
+ a:hover {
     text-decoration: underline;
  }
- section p {
+ section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
     line-height: 2em;
  }
+ section > p {
+   padding-bottom: 2em;
+ }
  section.fundobranco {
-    padding: 55px 0px 55px 30px;
     background-color: white;
+    color: black;
  }
- section.img1 {
+ section.img {
+    background-attachment: fixed;     
+    color: white;
+    background-size: cover;    
+    background-color: rgb(51, 51, 51);
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.425);    
+ }
+
+ section.img p {
+    text-align: justify;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.473);
+    text-shadow: 1px qpx 0px black;
+    
+ }
+ section#img01 {
     background-image: url(imagens/background001.jpg);
-    background-attachment: fixed; 
-    padding: 55px 0px 55px 30px;
-    color: white;
-    background-size: cover;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-color: rgb(51, 51, 51);
-    
-    
- }
- section.img1 p {
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0.473);
-    
- }
- section.img2 {
+ } 
+ section#img02 {
     background-image: url(imagens/background002.jpg);
-    background-attachment: fixed;
-    padding: 55px 0px 55px 30px;
-    color: white;
-    background-size: cover;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-color: rgb(51, 51, 51);
- }
- section.img2 p {
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0.473);
-    
- }
- #container {
-    background-size: 100% 100%;
-    position: relative;
-    height: 99vh;
-    padding: 60px 0px 110px 30px;
- }
- #conteudo {
-    background-size: 100% 100%;
-    position: absolute;
-    height: 650px;
-    width: 580px;
- }
+ }   
+
  footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px 0px 10px 0px;
  }
- footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-}
- footer a:hover {
-    text-decoration: underline;
-}
