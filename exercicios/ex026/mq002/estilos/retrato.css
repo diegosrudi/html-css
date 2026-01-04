@@ -3,5 +3,6 @@
 /* Aparelhos em modo retrato */
 
 body {
-    background-color: #ff5733;
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
 }
